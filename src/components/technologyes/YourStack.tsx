@@ -1,7 +1,5 @@
 
 import type { Technologes } from '../../type/type';
-import Technologe from './Technologe';
-
 interface YourStackProps{
     stack: Technologes[]
     removeFromStack: (id: number)=>void;
