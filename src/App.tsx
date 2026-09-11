@@ -26,19 +26,18 @@ const addToStack = (technologe: Technologes)=>{
        <Navbar/>
        <Hero/>
 
-    <div className='flex gap-10'>
+      <div className='flex gap-10 '>
         <div className='flex-1'>
           <Suspense fallback = {<h2>Loading.....</h2>} >
             <Technologe technologiesPromise = {technologiesPromise()} 
             addToStack = {addToStack}/>
-    </Suspense>
+            </Suspense>
        </div>
-            <div className='w-80 mr-10 mt-10'>
+            <div className='w-80'>
                   <YourStack stack={stack}/>
             </div>
     </div>
 
-   
     </>
   )
 }
