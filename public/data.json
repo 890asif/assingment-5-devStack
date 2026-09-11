@@ -178,25 +178,5 @@
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
     "badge": "Essential"
-  },
-  {
-    "id": "firebase",
-    "name": "Firebase",
-    "category": "Backend",
-    "description": "A Google platform providing backend services such as authentication, database, and hosting.",
-    "icon": "https://icon.icepanel.io/Technology/svg/Firebase.svg",
-    "rating": 4.7,
-    "difficulty": "Beginner-Friendly",
-    "badge": "Popular"
-  },
-  {
-    "id": "redis",
-    "name": "Redis",
-    "category": "Database",
-    "description": "An in-memory data store commonly used for caching, sessions, and high-performance applications.",
-    "icon": "https://icon.icepanel.io/Technology/svg/Redis.svg",
-    "rating": 4.7,
-    "difficulty": "Intermediate",
-    "badge": "Fast"
   }
 ]

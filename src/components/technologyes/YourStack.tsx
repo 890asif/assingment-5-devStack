@@ -24,15 +24,15 @@ const YourStack = ({stack, removeFromStack, removeAll}:YourStackProps) => {
                 <img src={technology.icon} alt={technology.name} className='h-10 w-10' />
 
             <div className='dlex-1'>
-            <h3 className='font-semibold'>t{technology.name}</h3>
+            <h3 className='font-semibold'>{technology.name}</h3>
             <p className='text-sm text-gray-500'>{technology.category}</p>
             </div>
-            <button onClick={()=> removeFromStack(technology.id)} className='text-lg font-bold text-red-500 hover:text-red-700'>
+            <button type='button' onClick={()=> removeFromStack(technology.id)} className='text-lg font-bold text-red-500 hover:text-red-700'>
               X
             </button>
                 </div>
                 ))}
-                <button onClick={removeAll} className='mt-3 w-full rounded-lg border border-red-400 py-2 text-red-500 hover:bg-red-50'>Remove All</button>
+                <button type='button' onClick={removeAll} className='mt-3 w-full rounded-lg border border-red-400 py-2 text-red-500 hover:bg-red-50 font-semibold'>Remove All</button>
             </div>
             )}
         </div>

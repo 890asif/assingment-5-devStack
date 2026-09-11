@@ -10,12 +10,6 @@ interface TechnologyProps{
 const Technologe = ({technologiesPromise, addToStack}:TechnologyProps) => {
     const technologes = use(technologiesPromise)
     return (
-    <div>
-    <div>
-        <h1 className='text-4xl font-bold'>Explore the <span className='bg-gradient-to-r from-orange-500 via-pink-500 to-purple-500 bg-clip-text
-            text-transparent'>Technologies</span></h1>
-    <p className='text-gray-500 my-4'>Pick one technology per category to build your ideal stack.</p>
-    </div>
      <div className='grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 m-15'>
         {technologes.map((technologe)=>(
             <div key={technologe.id} className='flex min-h-70 flex-col rounded-xl border border-gray-200 bg-white p-4 transition hover:shadow-md'>
@@ -39,12 +33,12 @@ const Technologe = ({technologiesPromise, addToStack}:TechnologyProps) => {
                         
                     </div>
 
-                    <button onClick={() => addToStack(technologe)} className='w-full rounded-md bg-[#111827] py-2 text-x font-semibold transition hover:bg-gray-500 text-white m-2'>Add to Stack</button>
+                    <button type='button' onClick={() => addToStack(technologe)} className='w-full rounded-md bg-[#111827] py-2 text-x font-semibold transition hover:bg-gray-500 text-white m-2 mx-auto'>Add to Stack</button>
                 </div>
                 </div>
         ))}
     </div>
-</div>
+
 
     );
 };
