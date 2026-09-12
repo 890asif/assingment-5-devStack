@@ -1,47 +1,48 @@
 
 import Logo from '../assets/logo-text.png'
 import { useState } from 'react';
-import { IoMdMenu } from "react-icons/io";
-import { IoClose } from 'react-icons/io5';
+import { FaBars, FaXmark } from 'react-icons/fa6';
 
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className='flex items-center justify-between px-6 py-4 lg:px-15'>
+    <nav className=' sticky top-0 z-50 border-b border-gray-200 bg-white backdrop-blur'>
 
-     <div className='flex items-center gap-3'>
-        <button onClick={()=> setMenuOpen(!menuOpen)} className='text-3xl md:hidden'>
-        {menuOpen ? <IoClose/> : <IoMdMenu/>}</button>
+     <div className='mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-10'>
+
+        <button onClick={()=> setIsOpen(!isOpen)} className='text-xl  text-gray-700 md:hidden' arail-label='Toggle menu'>
+        {isOpen ? <FaXmark/> : <FaBars/>}</button>
        <img src={Logo} alt="" />
-     </div>
       
-        <ul className='flex  gap-6 mx-auto hidden md:flex '>
-        <li className='text-[#D91B7E]'>Home</li>
-        <li>Technology</li>
-        <li>Projects</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
+       <div className='hidden items-center gap-7 md:flex'>
+        <a href="" className='test-sm text-gray-700 hover:text-orange-500'>Home</a>
+        <a href="" className='test-sm text-gray-700 hover:text-orange-500'>Technology</a>
+        <a href="" className='test-sm text-gray-700 hover:text-orange-500'>Projects</a>
+        <a href="" className='test-sm text-gray-700 hover:text-orange-500'>About</a>
+        <a href="" className='test-sm text-gray-700 hover:text-orange-500'>Contact</a>
+       </div>
 
-      <div className='gap-2 hidden md:flex'>
-        <button className='px-5 py-2 text-black rounded-3xl font-semibold'>Sign In</button>
-        <button className='px-4 py-2 rounded-3xl bg-[#D91B7E] font-semibold text-white hover:bg-pink-400'>Sign Up</button>
+      <div className='flex items-center gap-2'>
+        <button className='rounded-lg px-3 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-100'>Sign In</button>
+        <button className='rounded-lg bg-gradient-to-r from-orange-500 via-pink-500 to-purple-500 px-3 py-2 text-sm font-semibold text-white hover:opacity-90'>Sign Up</button>
+      </div>
       </div>
 
 
-     {menuOpen &&(
-         <div className='mt-5 md:hidden'>
-          <ul className='flex  flex-col gap-4'>
-        <li className='text-[#D91B7E]'>Home</li>
-        <li>Technology</li>
-        <li>Projects</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
+
+     {isOpen &&(
+         <div className='border-t border-gray-200 bg-white px-5 py-4 md:hodden'>
+          <div>
+            <a href="" onClick={()=> setIsOpen(false)}>Home</a>
+            <a href="" onClick={()=> setIsOpen(false)}>Technology</a>
+            <a href="" onClick={()=> setIsOpen(false)}>Project</a>
+            <a href="" onClick={()=> setIsOpen(false)}>About</a>
+            <a href="" onClick={()=> setIsOpen(false)}>Contack</a>
+          </div>
          </div>
      )}
     </nav>
-  )
-}
+  );
+};
 
 export default Navbar;
