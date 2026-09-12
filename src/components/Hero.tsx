@@ -14,8 +14,8 @@ const Hero = () => {
                 next project.</p>    
  
                 <div className='flex gap-6 mt-12'> 
-                    <button className='bg-gradient-to-r from-orange-500 to-pink-500 text-white font-semibold px-3 py-1 rounded-xl'>Explore Technologies</button> 
-                    <button className='border border-gray-300 text-gray-700 font-semibold px-9 py-3 rounded-xl '>Learn More</button> 
+                    <button className='bg-gradient-to-r from-orange-500 to-pink-500 text-white font-semibold px-3 py-1 rounded-xl hover:bg-purple-500'>Explore Technologies</button> 
+                    <button className='border border-gray-300 text-gray-700 font-semibold px-9 py-3 rounded-xl'>Learn More</button> 
                 </div> 
         </div> 
                 

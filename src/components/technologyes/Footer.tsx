@@ -3,10 +3,10 @@ import Logo from "../../assets/logo-text.png";
 
 const Footer = () => {
     return (
-       <footer  className="border-t border-gray-100 bg-white px-6 py-10 md:px-14 mt-15">
+       <footer  className="border-t border-gray-100 bg-white px-6 pt-15 pb-6 md:px-14 mt-15">
         <div className="flex mx-auto justify-center gap-50 md:grid-cols-4">            
        <div className="md:col-span-2">
-            <img src={Logo} alt=""  className="mb-3 w-30"/>
+            <img src={Logo} alt=""  className="mb-4  w-30"/>
             <p className='max-w-x text-xs text-gray-500'>Curated tools, technologies, 
             and resources for developers <br /> building
             modern software.</p>
@@ -43,7 +43,7 @@ const Footer = () => {
             </div>
         </div>
         
-        <div className="mx-auto mt-8 flex max-w-6xl flex-col justify-between gap-3 border-t border-gray-100 pt-5 text-3 text-gray-500 sm:flex-row">
+        <div className="mx-auto mt-8 flex max-w-6xl flex-col justify-between gap-3 border-t border-gray-200 pt-5 text-3 text-gray-500 sm:flex-row">
             <p>© 2026 Dev Stack. All rights reserved.</p>
             <div className="flex gap-5">
                 <a href="" className="hover:text-purple-500">Privacy</a>
