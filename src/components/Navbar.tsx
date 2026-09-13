@@ -33,11 +33,11 @@ const Navbar = () => {
      {isOpen &&(
          <div className='border-t border-gray-200 bg-white px-5 py-4 md:hidden'>
           <div className='flex flex-col gap-4'>
-            <a href="" onClick={()=> setIsOpen(false)}>Home</a>
-            <a href="" onClick={()=> setIsOpen(false)}>Technology</a>
-            <a href="" onClick={()=> setIsOpen(false)}>Projects</a>
-            <a href="" onClick={()=> setIsOpen(false)}>About</a>
-            <a href="" onClick={()=> setIsOpen(false)}>Contact</a>
+            <a href="" className='text-sm text-gray-700 hover:text-orange-500' onClick={()=> setIsOpen(false)}>Home</a>
+            <a href="" className='text-sm text-gray-700 hover:text-orange-500' onClick={()=> setIsOpen(false)}>Technology</a>
+            <a href="" className='text-sm text-gray-700 hover:text-orange-500' onClick={()=> setIsOpen(false)}>Projects</a>
+            <a href="" className='text-sm text-gray-700 hover:text-orange-500' onClick={()=> setIsOpen(false)}>About</a>
+            <a href="" className='text-sm text-gray-700 hover:text-orange-500' onClick={()=> setIsOpen(false)}>Contact</a>
           </div>
          </div>
      )}
