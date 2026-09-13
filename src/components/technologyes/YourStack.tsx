@@ -31,7 +31,7 @@ const YourStack = ({stack, removeFromStack, removeAll}:YourStackProps) => {
                 <div key={technologe.id} className='flex items-center gap-3 rounded-lg border border-gray-200 p-3'>
                     <img src={technologe.icon} alt={`${technologe.name}`}  className='h-9 w-9 object-contain'/>
 
-                    <div className='min-w-0 flex-1'>
+                    <div className=' flex items-center gap-2 min-w-0 flex-1'>
                         <h3 className='truncate text-sm font-semibold text-gray-800'>{technologe.name}</h3>
 
                         <p className='text-xs text-gray-500'>{technologe.category}</p>

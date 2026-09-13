@@ -43,7 +43,7 @@ const Technologe = ({technologiesPromise, addToStack, stack}: TechnologyProps) =
                         
                     </div>
 
-                    <button disabled={isAdded} onClick={() => addToStack(technologe)} className={`w-full rounded-lg bg-[#111827] px-4 py-2.5 text-sm  font-semibold transition text-white ${isAdded ? "cursor-not-allowed bg-green-600" : " hover:opacity-90" }`}>{isAdded ? "Added to Stack" : "Add to Stack"}</button>
+                    <button disabled={isAdded} onClick={() => addToStack(technologe)} className={`w-full rounded-lg bg-[#111827] px-4 py-2.5 text-sm  font-semibold transition text-white ${isAdded ? "cursor-not-allowed bg-gray-500" : " hover:opacity-90" }`}>{isAdded ? "Added to Stack" : "Add to Stack"}</button>
                 </div>
               </div>
            );

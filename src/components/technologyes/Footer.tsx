@@ -67,8 +67,8 @@ const Footer = () => {
         <div className="mx-auto mt-8 flex max-w-6xl flex-col justify-between gap-3 border-t border-gray-200 pt-5 text-xs text-gray-400 sm:flex-row">
             <p>© 2026 Dev Stack. All rights reserved.</p>
             <div className="flex gap-5">
-                <a href="" className="hover:text-purple-500">Privacy</a>
-                <a href="" className="hover:text-purple-500">Terms</a>
+                <a href="" className='transition hover:text-pink-500'>Privacy</a>
+                <a href="" className='transition hover:text-pink-500'>Terms</a>
             </div>
              </div>
         </div>

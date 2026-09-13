@@ -18,7 +18,7 @@ const Hero = () => {
 
                     <a href='' className='bg-gradient-to-r from-orange-500 to-pink-500 text-white font-semibold px-5 py-3 rounded-lg transition hover:bg-purple-500'>Explore Technologies</a> 
 
-                    <a href='' className='border border-gray-300 text-gray-700 font-semibold px-10 py-2 rounded-lg hover:bg-orange-400'>Learn More</a>
+                    <a href='' className='border border-gray-300 text-gray-700 font-semibold px-10 py-2 rounded-lg hover:bg-pink-500 hover:text-white'>Learn More</a>
              </div> 
              </div> 
                 
