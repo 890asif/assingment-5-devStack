@@ -30,7 +30,7 @@ const Technologe = ({technologiesPromise, addToStack, stack}: TechnologyProps) =
                 <p className='mt-2 text-sm leading-6 text-gray-500'>{technologe.description}</p>
 
                 <div className='mt-auto'>
-                    <div className=' my-5 flex flex-wrap items-center justify-between  gap-2 text-xs text-gray-500'>
+                    <div className=' my-5 flex flex-wrap items-center justify-between  gap-1 text-xs text-gray-500'>
                         <span className='rounded-md bg-gray-100 px-2 py-1'>{technologe.category}</span>
 
                         <span>{technologe.difficulty}</span>
