@@ -98,7 +98,7 @@ Installation and Setup
 1. Clone the repository
 
 ```bash
-git clone <your-github-repository-url>
+git clone [https://github.com/890asif/assingment-5-devStack.git]
 ```
 
 ### 2. Navigate to the project directory
